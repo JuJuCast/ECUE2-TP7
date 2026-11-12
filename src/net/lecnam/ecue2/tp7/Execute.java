@@ -11,7 +11,7 @@ public class Execute {
 
         exercice1();
 
-        //exercice2();
+        exercice2();
 
         //exercice3();
 
@@ -52,7 +52,7 @@ public class Execute {
         boolean estCyanPremier = !couleurs.isEmpty() && couleurs.get(0).equals("cyan");
         System.out.println("Cyan est en première position : " + estCyanPremier);
         System.out.println("----------------");
-        
+
         Collections.sort(couleurs);
         for (String c : couleurs) {
             System.out.println(c);
@@ -62,6 +62,14 @@ public class Execute {
 
 
     public static void exercice2() {
+
+        Nuancier nuancier = new Nuancier();
+        Set<String> couleursTreeSet = nuancier.getCouleursTreeSet();
+
+        System.out.println("Contenu du TreeSet :");
+        for (String c : couleursTreeSet) {
+            System.out.println(c);
+        }
 
 
     }
