@@ -13,7 +13,7 @@ public class Execute {
 
         exercice2();
 
-        //exercice3();
+        exercice3();
 
         //exercice4();
 
@@ -76,8 +76,9 @@ public class Execute {
 
 
     private static void exercice3() {
-
-
+        Nuancier nuancier = new Nuancier();
+        String couleurR = nuancier.getCouleurFromCode('r');
+        System.out.println("La couleur correspondant à la lettre 'r' est : " + couleurR);
 
     }
 
